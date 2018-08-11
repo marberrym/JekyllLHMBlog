@@ -23,6 +23,37 @@ description: >- # this means to ignore newlines until "baseurl:"
   years to share my light with others.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+#Sidebar Pages
+defaults:
+  - scope:
+      path: coding.md
+    values:
+      menu: true
+      order: 1
+  - scope:
+      path: projects.md
+    values:
+      menu: true
+      order: 2
+  - scope:
+      path: resume.md
+    values:
+      menu: true
+      order: 3
+  - scope:
+      path: lifestyle.md
+    values:
+      menu: true
+      order: 4
+  - scope:
+      path: about.md
+    values:
+      menu: true
+      order: 5
+
+
 #twitter_username: jekyllrb
 github_username:  marberrym
 linkedin_username: in/matthew-marberry-aa13b326
@@ -50,29 +81,4 @@ plugins:
 #   - vendor/ruby/
 
 #Sidebar Pages
-defaults:
-  - scope:
-      path: Coding.md
-    values:
-      menu: true
-      order: 1
-  - scope:
-      path: Projects.md
-    values:
-      menu: true
-      order: 2
-  - scope:
-      path: Resume.md
-    values:
-      menu: true
-      order: 3
-  - scope:
-      path: Lifestyle.md
-    values:
-      menu: true
-      order: 4
-  - scope:
-      path: About.md
-    values:
-      menu: true
-      order: 5
+
