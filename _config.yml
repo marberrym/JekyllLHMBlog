@@ -28,22 +28,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #Sidebar Pages
 defaults:
   - scope:
-      path: coding.md
+      path: category/coding.md
     values:
       menu: true
       order: 1
   - scope:
-      path: projects.md
+      path: category/projects.md
     values:
       menu: true
       order: 2
   - scope:
-      path: resume.md
+      path: category/lifestyle.md
     values:
       menu: true
       order: 3
   - scope:
-      path: lifestyle.md
+      path: resume.md
     values:
       menu: true
       order: 4
@@ -52,6 +52,15 @@ defaults:
     values:
       menu: true
       order: 5
+
+#Categories
+collections:
+  featured_categories:
+    permalink:         /:name/
+    output:            true
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
 
 
 #twitter_username: jekyllrb
