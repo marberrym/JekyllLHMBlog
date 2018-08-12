@@ -4,4 +4,7 @@ title: Resume
 menu: true
 ---
 
-Hey yo
+
+> _**Don't Worry,**_
+>
+> _**I'm coming soon...**_
